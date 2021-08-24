@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receptoár</title>
+
+  <!-- ÍKONY/CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel = "stylesheet" href = "Style.css">
+  <!-- FONTY/ÍKONY/CSS -->
+  
+</head>
+<body>
+  
+  <div class = "container">
+    <div class = "recept">
+      <div class = "meal-search">
+        <h2 class = "Nadpis">Najdite svoj recept podľa vaších surovín</h2>
+        <blockquote>Názov surovín zadávajte po anglicky.</blockquote>
+
+        <div class = "SearchBar">
+          <input type = "text" class = "Vyhladavanie" placeholder="Zadajte názov suroviny" id = "search-input">
+          <button type = "submit" class = "SearchButton ButtonStyle" id = "SearchButton">
+            <i class = "fas fa-search"></i>
+          </button>
+        </div>
+
+        
+        <div id="results">
+          NAPOSLEDY VYHLADAVANÉ SUROVINY:
+        </div>
+
+
+      </div>
+
+      <div class = "jedlo-find">
+        <h2 class = "Nadpis">Vaše výsledky:</h2>
+        <div id= "jedlo">
+        </div>
+      </div>
+
+
+      <div class = "jedlo-detaily">
+        
+        <!-- recipe close btn -->
+        <button type = "button" class = "ButtonStyle recipe-close-btn" id = "recipe-close-btn">
+          <i class = "fas fa-times"></i>
+        </button>
+
+        <!-- meal content -->
+        <div class = "meal-details-content">
+          
+        
+           </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- PREPOJENIE NA JAVASCRIPT -->
+  <script src = "javascript.js"></script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root{  
+    /* Color 1 je základná farba / Color2 je farba pri hover */
+    --color1: #962433;
+    --color2: #fc0505;
+}
+/* Nastavuje font textov */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Nastavuje kurzor pre button */
+.ButtonStyle{
+    cursor: pointer;
+}
+
+/* Nastavuje nadpisy*/
+.Nadpis{
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.container{
+    min-height: 150px;
+}
+
+/* Nastavuje zobrazené recepty*/
+.recept{
+    max-width: 980px;
+    margin: auto;
+    text-align: center;
+}
+/* Nastavuje search bar*/
+.SearchBar{
+    margin: 1.5rem ;
+    display: flex;  
+}
+
+.Vyhladavanie,
+.SearchButton{
+    width: 100%;
+}
+.Vyhladavanie{
+    padding: 1rem;
+    font-size: 1.3rem;
+    outline: 0;
+    border: 3px solid var(--color1);
+    border-top-left-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+}
+
+.SearchButton{
+    width: 65px;
+    height: 65px;
+    font-size: 2rem;
+    background: var(--color1);
+    color: rgb(255, 255, 255);
+    border: var(--color1);
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+/* Nastavuje search bar*/
+
+.jedlo-find{
+    margin-top: 3rem;
+}
+
+#jedlo{
+    margin: 3rem 0;
+}
+.karta-jedla{
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+    box-shadow: 0 5px 24px -12px #962433;
+    margin: 2rem 0;
+}
+.jedlo-obrazok img{
+    width: 100%;
+    display: flex;
+}
+.jedlo-nazov{
+    padding: 0.3rem 0.5rem;
+}
+.jedlo-nazov h3{
+    font-size: 1.4rem;
+}
+.recept-button{
+    color: rgb(255, 255, 255);
+    background: var(--color1);
+    font-weight: 550;
+    font-size: 1rem;
+    padding: 0.85rem 0;
+    display: block;
+    width: 175px;
+    margin: 1rem auto;
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+     text-decoration: none;
+}
+.recept-button:hover{
+    background: var(--color2);
+}
+
+.jedlo-detaily{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    background: var(--color1);
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+    width: 100%;
+    height: 90%;
+    display: none;
+}
+.jedlo-detaily::-webkit-scrollbar{
+    width: 10px;
+}
+.jedlo-detaily::-webkit-scrollbar-thumb{
+    background: #f0f0f0;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+
+.showRecipe{
+    display: block;
+}
+
+.recipe-close-btn{
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    font-size: 2rem;
+    background: rgb(255, 255, 255);
+    border: var(--color1);
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.recipe-title{
+    font-size: 3.5rem;
+}
+.recipe-category{
+    background: rgb(255, 255, 255);
+    font-weight: 1000;
+    color: var(--color1);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 3rem;  
+}
+.recipe-meal-img img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin: 0 auto;
+    display: block;
+}
+.recipe-link{
+    margin: 2rem 0;
+}
+.recipe-link a{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: 1000;
+   
+}
+
+.notFound{
+    grid-template-columns: 1fr!important;
+    color: var(--color2);
+    font-size: 2rem;
+    font-weight: 1000;
+    width: 100%;
+}
+
+#results {
+    display: none; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 520px;
+    height: 150px;
+    border-radius: 0.5rem;
+    overflow-y: hidden;
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+    border: 3px solid var(--color1);
+    border-top-left-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+
+@media screen and (min-width: 768px){
+    #jedlo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .karta-jedla{
+        margin: 0;
+    }
+    .jedlo-detaily{
+        width: 700px;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    #jedlo{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
